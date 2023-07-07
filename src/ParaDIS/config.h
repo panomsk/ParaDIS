@@ -15,11 +15,11 @@
 #define init_bsf (2) 
 #define cut_off_neighbors (true) 
 
-#define d_par (5) 
+#define d_par (3) 
 #define l_par (50) 
 #define k_par (3) 
 
-#define r_par (12) 
+#define r_par (int(floor(l_par/4))) 
 #define inf_val (1e+10)
 #define itemtype_epsilon (2.2204460492503131e-16)
 #define num_lb (4)
