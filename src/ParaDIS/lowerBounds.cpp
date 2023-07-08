@@ -1,3 +1,15 @@
+/*+++++++++++++++++++++++++++++++++
+
+Project: ParaDIS (Parallel Algorithm for Imputation of Missing Values in Streaming Time Series)
+
+Source file: lowerBounds.cpp
+
+Purpose: Lower bounds calculation for two subsequences
+
+Author(s): Andrey Poluyanov (andrey.poluyanov@gmail.com) and Mikhail Zymbler (mzym@susu.ru)
+
++++++++++++++++++++++++++++++++++*/
+
 #include "lowerBounds.h"
 
 
@@ -15,13 +27,13 @@ itemType LbKeogh(itemType* Q, itemType* C, int r)
 	{ 
 		itemType max_lokal = Q[i];
 		itemType min_lokal = Q[i];
-		//!! исправлено значение верхней границы 
+
 		for (int j = max((i - r),0); j <= min((i + r),(l_par-1)); j++)
 		{
 			max_lokal = max(max_lokal, Q[j]);
 			min_lokal = min(min_lokal, Q[j]);
 		}
-		//!! вынесено во внешний цикл
+
 		upper[i] = max_lokal;
 		lower[i] = min_lokal;
 	}
@@ -37,6 +49,5 @@ itemType LbKeogh(itemType* Q, itemType* C, int r)
 			lb_dist = lb_dist + dist(C[i], lower[i]);
 		}
 	}
-	//printf_s("%lf\n", lb_dist);
 	return lb_dist;
 }   

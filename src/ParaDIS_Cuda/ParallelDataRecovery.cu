@@ -1,3 +1,15 @@
+/*+++++++++++++++++++++++++++++++++
+
+Project: ParaDIS (Parallel Algorithm for Imputation of Missing Values in Streaming Time Series)
+
+Source file: ParallelDataRecovery.cpp
+
+Purpose: main function
+
+Author(s): Andrey Poluyanov (andrey.poluyanov@gmail.com) and Mikhail Zymbler (mzym@susu.ru)
+
++++++++++++++++++++++++++++++++++*/
+
 #include <time.h>
 #include <stdio.h>
 #include <malloc.h>

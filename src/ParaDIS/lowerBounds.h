@@ -1,3 +1,15 @@
+/*+++++++++++++++++++++++++++++++++
+
+Project: ParaDIS (Parallel Algorithm for Imputation of Missing Values in Streaming Time Series)
+
+Source file: lowerBounds.h
+
+Purpose: Lower bounds calculation for two subsequences
+
+Author(s): Andrey Poluyanov (andrey.poluyanov@gmail.com) and Mikhail Zymbler (mzym@susu.ru)
+
++++++++++++++++++++++++++++++++++*/
+
 #ifndef LOWERBOUNDS_H
 #define LOWERBOUNDS_H
 

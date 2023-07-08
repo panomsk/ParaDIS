@@ -1,3 +1,15 @@
+/*+++++++++++++++++++++++++++++++++
+
+Project: ParaDIS (Parallel Algorithm for Imputation of Missing Values in Streaming Time Series)
+
+Source file: Z_norm.h
+
+Purpose: Z-normalization of subsequence
+
+Author(s): Andrey Poluyanov (andrey.poluyanov@gmail.com) and Mikhail Zymbler (mzym@susu.ru)
+
++++++++++++++++++++++++++++++++++*/
+
 #ifndef Z_NORM_H
 #define Z_NORM_H
 

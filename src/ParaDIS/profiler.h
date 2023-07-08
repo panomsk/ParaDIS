@@ -1,3 +1,15 @@
+/*+++++++++++++++++++++++++++++++++
+
+Project: ParaDIS (Parallel Algorithm for Imputation of Missing Values in Streaming Time Series)
+
+Source file: profiler.h
+
+Purpose: Simple profiler
+
+Author(s): Andrey Poluyanov (andrey.poluyanov@gmail.com) and Mikhail Zymbler (mzym@susu.ru)
+
++++++++++++++++++++++++++++++++++*/
+
 #ifndef PROFILER_H
 #define PROFILER_H
 

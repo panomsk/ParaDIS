@@ -1,10 +1,22 @@
+/*+++++++++++++++++++++++++++++++++
+
+Project: ParaDIS (Parallel Algorithm for Imputation of Missing Values in Streaming Time Series)
+
+Source file: config.h
+
+Purpose: ParaDIS input parameters
+
+Author(s): Andrey Poluyanov (andrey.poluyanov@gmail.com) and Mikhail Zymbler (mzym@susu.ru)
+
++++++++++++++++++++++++++++++++++*/
+
 #ifndef CONFIG_H
 #define CONFIG_H
 #include <math.h>
 
 #define L_par (22500) //start point
 #define lengthsrt (5000)
-#define numimputevalue (2500) // count of imputation points
+#define numimputevalue (2500) //count of imputation points
 
 #define cum_error (true) 
 
@@ -23,7 +35,7 @@
 #define inf_val (1e+10)
 #define itemtype_epsilon (2.2204460492503131e-16)
 #define num_lb (4)
-#define use_corr (false)//(false)
+#define use_corr (false)
 
 #define dist(x,y) (((x)-(y))*((x)-(y)))
 #define min(x,y) ((x)<(y)?(x):(y))
